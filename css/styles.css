@@ -1,13 +1,18 @@
 :root {
   --primary-text-color: #212121;
-  --basic-color: #ffffff;
+  --text-color: #000000;
+  --basic-color: #f5f5f5;
+  --second-basic-color: #ffffff;
+  --background-color: #f5f4fa;
   --accent-color: #2196f3;
+  --small-text-color: #757575;
+  --shadow-text-color: rgba(255, 255, 255, 0.6);
   --text-size: 14px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
+  background-color: var(--second-basic-color);
   color: var(--primary-text-color);
 }
 
@@ -25,7 +30,7 @@ body {
 }
 .logo.header-logo {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: var(--text-color);
 }
 .logo span {
   color: var(--accent-color);
@@ -40,7 +45,7 @@ body {
   background-color: var(--basic-color);
 }
 
-.header-list {
+.header-link {
   font-weight: 500;
   font-size: var(--text-size);
   line-height: 1.14;
@@ -51,7 +56,7 @@ body {
 }
 
 .header-contact {
-  color: #757575;
+  color: var(--small-text-color);
 }
 .header-item:hover,
 .header-item:focus {
@@ -80,10 +85,14 @@ body {
 }
 .hero-button {
   font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
   background-color: var(--accent-color);
   color: var(--basic-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px
 }
 
 .hero-button:hover,
@@ -101,21 +110,23 @@ body {
 }
 .text-aside {
   font-size: var(--text-size);
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--small-text-color);
 }
 /*--------------СЕКЦІЇ---------*/
+.background{
+  background-color: var(--basic-color);
+}
 .studio-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
 }
-
-.team-list {
+.team-item {
   background-color: var(--basic-color);
 }
 
@@ -130,7 +141,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--small-text-color);
 }
 
 /*-------------FOOTER----------------*/
@@ -152,7 +163,7 @@ body {
 }
 
 .footer-contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--shadow-text-color);
 }
 
 .footer-contact:hover,
@@ -182,9 +193,11 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   color: var(--primary-text-color);
   cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
 }
 
 .btn:hover,
@@ -208,5 +221,5 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--small-text-color);
 }
